@@ -52,7 +52,6 @@ public class Ghost_Controller : MonoBehaviour
 
         while (_board.CanMove(_activeShape, newPosition) && attempts < 30)
         {
-            Debug.Log(newPosition);
             newPosition.x += _board.MoveDirection.x;
             newPosition.y += _board.MoveDirection.y;
             Position = newPosition;
